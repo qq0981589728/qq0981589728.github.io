@@ -154,10 +154,12 @@ Class name automatically added to element */
     }
 
     .aia {
-      padding:200px 0 100px 50px;
+      padding: 200px 0 100px 50px;
     }
 
- 
+    #imgtab2{
+      transform:translate(30%,-100%)
+    }
   </style>
 </head>
 
@@ -230,7 +232,7 @@ Class name automatically added to element */
           <button type="button" class="btn btn-danger btn-lg">台味創始</button>
           <p>約20年前創立，原名：【台味飲食部】，</p>
           <p>2018年6月裝潢整修，2018年7月重新開幕，正式更名為：【台味食堂】</p>
-          
+
           <button type="button" class="btn btn-danger btn-lg">台味理念</button>
           <p>每日現點現做，新鮮食材，讓客人有賓至如歸的感受。</p>
           <p>堅持道地的台灣家鄉味，品嚐後讓人回味無窮，彷佛走進時光隧道。</p>
@@ -238,61 +240,61 @@ Class name automatically added to element */
       </div>
     </div>
   </div>
-      <div class="container">
-        <div class="row"></div>
-        <div class="col">
-          <img src="./img/截圖後小吃圖片.jpg" alt="">
-        </div>
-        <div class="col">
-          
-        </div>
+  <div class="container">
+    <div class="row">
+    </div>
+    <div class="col">
+      <img src="./img/截圖後小吃圖片.jpg" alt="">
+      <img id="imgtab2" src="./img/產品介紹.png" alt="">
+    </div>
 
 
 
 
 
 
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-  <script type="text/javascript" src="jquery.simplyscroll.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="jquery.simplyscroll.min.js"></script>
 
 
-  <script type="text/javascript">
-    (function ($) {
-      $(function () { //on DOM ready 
-        $("#scroller").simplyScroll();
+    <script type="text/javascript">
+      (function ($) {
+        $(function () { //on DOM ready 
+          $("#scroller").simplyScroll();
+        });
+      })(jQuery);
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+      var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
       });
-    })(jQuery);
-  </script>
-
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script>
-    var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  </script>
+    </script>
 </body>
 
 </html>
