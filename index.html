@@ -165,10 +165,32 @@ Class name automatically added to element */
       color: brown;
       width: 100px;
       margin: auto;
+      font-weight: 800;
+
     }
 
     section#t3 .container p {
-      padding: 0px 50px;
+      padding: 0px 60px;
+    }
+
+    #imgtab3 {
+      transform: translate(-350%, -100%);
+    }
+
+    section#t4 .container p {
+      padding: 10px 100px;
+    }
+
+    #imgbox3 {
+      padding: 20px 0;
+    }
+
+    section#t4 {
+      background-color: #FFE9E9;
+    }
+
+    #imgtab4{
+      transform: translate(430%,-700%);
     }
   </style>
 </head>
@@ -184,9 +206,9 @@ Class name automatically added to element */
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav mx-auto">
-          <a class="nav-item nav-link active" href="#">關於台味 <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="#">產品介紹</a>
-          <a class="nav-item nav-link" href="#">產品特色</a>
+          <a class="nav-item nav-link active" href="#t1">關於台味 <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#t2">產品介紹</a>
+          <a class="nav-item nav-link" href="#t4">產品特色</a>
           <a class="nav-item nav-link" href="#">聯絡我們</a>
           <a class="nav-item nav-link"
             href="https://www.facebook.com/%E5%8F%B0%E5%91%B3%E9%A3%9F%E5%A0%82-1559497914265834/">FB粉絲團</a>
@@ -232,37 +254,38 @@ Class name automatically added to element */
 
   <section id="t1">
     <div class="conter">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 col aea">
-          <img id="imgbox" src="./img/餐點種類.jpg">
-          <img id="imgtab" src="./img/關於台味.png" alt="">
-        </div>
+      <div class="container font-weight-bold">
+        <div class="row">
+          <div class="col-6 col aea">
+            <img id="imgbox" src="./img/餐點種類.jpg">
+            <img id="imgtab" src="./img/關於台味.png" alt="">
+          </div>
 
-        <div class="col-6 col aia">
-          <button type="button" class="btn btn-danger btn-lg">台味創始</button>
-          <p>約20年前創立，原名：【台味飲食部】，</p>
-          <p>2018年6月裝潢整修，2018年7月重新開幕，正式更名為：【台味食堂】</p>
+          <div class="col-6 col aia">
+            <button type="button" class="btn btn-danger btn-lg">台味創始</button>
+            <p>約20年前創立，原名：【台味飲食部】，</p>
+            <p>2018年6月裝潢整修，2018年7月重新開幕，正式更名為：【台味食堂】</p>
 
-          <button type="button" class="btn btn-danger btn-lg">台味理念</button>
-          <p>每日現點現做，新鮮食材，讓客人有賓至如歸的感受。</p>
-          <p>堅持道地的台灣家鄉味，品嚐後讓人回味無窮，彷佛走進時光隧道。</p>
+            <button type="button" class="btn btn-danger btn-lg">台味理念</button>
+            <p>每日現點現做，新鮮食材，讓客人有賓至如歸的感受。</p>
+            <p>堅持道地的台灣家鄉味，品嚐後讓人回味無窮，彷佛走進時光隧道。</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-  <section id="t2"><div class="container">
-    <div class="row">
-    </div>
-    <div class="col">
-      <img src="./img/截圖後小吃圖片.jpg" alt="">
-      <img id="imgtab2" src="./img/產品介紹.png" alt="">
-    </div>
-  </div>
-</section>
-  <section id="t3">
+  </section>
+  <section id="t2">
     <div class="container">
+      <div class="row">
+      </div>
+      <div class="col">
+        <img src="./img/截圖後小吃圖片.jpg" alt="">
+        <img id="imgtab2" src="./img/產品介紹.png" alt="">
+      </div>
+    </div>
+  </section>
+  <section id="t3">
+    <div class="container font-weight-bold">
       <div class="row">
         <div class="col-4">
           <img src="./img/花枝炒麵3.png" width="290" height="200" alt="">
@@ -270,7 +293,7 @@ Class name automatically added to element */
           <p>Q彈、鮮甜、美味，集三種特色於一身的花枝炒麵，金黃色的麵條是美味的關鍵角色，有多久沒品嘗...</p>
           <img src="./img/蝦仁蛋炒飯3.png" width="290" height="200" alt="">
           <h2>炒飯類</h2>
-          <p>蝦仁蛋炒飯，是江蘇揚州漢族傳統小吃，屬於揚州炒飯之一。將雞蛋炒飯人人都會，但炒得好也不容易，有時飯成...</p>
+          <p>蝦仁蛋炒飯，是江蘇揚州漢族傳統小吃，屬於揚州炒飯之一。將雞蛋炒飯人人都會，但炒得好也不容...</p>
         </div>
 
         <div class="col-4">
@@ -293,11 +316,45 @@ Class name automatically added to element */
     </div>
   </section>
 
+  <section id="t4">
+    <div class="container font-weight-bold">
+      <div class="row">
+        <div class="col-6 col">
+          <img id="imgbox3" src="./img/新鮮自種蔬菜.jpg" width="410" height="540" alt="">
+          <img id="imgtab3" src="./img/有機蔬菜.png" alt="">
+          <p>台味食材嚴選，空心菜，農家自種，</p>
+          <p>無農藥，吃得更安心</p>
+
+        </div>
+        <div class="col-6 col">
+          <div class="fb-video" data-href="https://www.facebook.com/1559497914265834/videos/1950780198311548/"
+            data-show-text="false" data-width="">
+            <blockquote cite="https://developers.facebook.com/1559497914265834/videos/1950780198311548/"
+              class="fb-xfbml-parse-ignore"><a
+                href="https://developers.facebook.com/1559497914265834/videos/1950780198311548/"></a>
+            </blockquote>
+          </div>
+          <p>《蚵仔煎》
+            它的靈魂來自它的醬</p>
+            <p>獨門秘方調製 在用慢火熬煮</p>
+           <p> 吃過的朋友都會愛上</p><img id="imgtab4" src="./img/關於台味.png" alt="">
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+
+  
 
 
 
 
 
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v6.0"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
     integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
