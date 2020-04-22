@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="jquery.simplyscroll.css" media="all" type="text/css">
 
   <style>
+    * {
+      font-family: "微軟正黑體";
+    }
+
     #navbarNavAltMarkup {
 
       font-size: 18px;
@@ -35,6 +39,10 @@
       color: #000;
       margin: 0;
       padding: 0;
+    }
+
+    p {
+      margin: 0;
     }
 
     .swiper-container {
@@ -178,7 +186,7 @@ Class name automatically added to element */
     }
 
     section#t4 .container p {
-      padding: 10px 100px;
+      padding: 10px 150px;
     }
 
     #imgbox3 {
@@ -189,8 +197,59 @@ Class name automatically added to element */
       background-color: #FFE9E9;
     }
 
-    #imgtab4{
-      transform: translate(430%,-700%);
+    #imgtab4 {
+      transform: translate(430%, -500%);
+    }
+
+    .info {
+      width: 730px;
+
+      background-color: cadetblue;
+      margin: auto;
+      padding: 75px 0 55px 0;
+    }
+
+    section#t1 .main-title {
+      width: 215px;
+      height: 75px;
+      background-color: #FF0000;
+      border-radius: 50px;
+      font-size: 36px;
+      color: white;
+      font-weight: 900;
+      text-align: center;
+      line-height: 75px;
+      margin: 20px 32px;
+    }
+
+    .info .main-title {
+      width: 215px;
+      height: 75px;
+      background-color: #FF0000;
+      border-radius: 50px;
+      font-size: 36px;
+      color: white;
+      font-weight: 900;
+      text-align: center;
+      line-height: 75px;
+      margin: 0 auto 32px auto;
+    }
+
+    .title {
+
+      color: #C0272D;
+      font-size: 24px;
+      font-weight: 900;
+      text-align: center;
+      line-height: 20px;
+
+    }
+
+    .content {
+      font-size: 18px;
+      font-weight: 900;
+      text-align: center;
+      margin: 13px auto 13px auto;
     }
   </style>
 </head>
@@ -209,7 +268,7 @@ Class name automatically added to element */
           <a class="nav-item nav-link active" href="#t1">關於台味 <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#t2">產品介紹</a>
           <a class="nav-item nav-link" href="#t4">產品特色</a>
-          <a class="nav-item nav-link" href="#">聯絡我們</a>
+          <a class="nav-item nav-link" href="#t5">聯絡我們</a>
           <a class="nav-item nav-link"
             href="https://www.facebook.com/%E5%8F%B0%E5%91%B3%E9%A3%9F%E5%A0%82-1559497914265834/">FB粉絲團</a>
         </div>
@@ -262,11 +321,13 @@ Class name automatically added to element */
           </div>
 
           <div class="col-6 col aia">
-            <button type="button" class="btn btn-danger btn-lg">台味創始</button>
+            <div class="main-title">台味創始</div>
+
             <p>約20年前創立，原名：【台味飲食部】，</p>
             <p>2018年6月裝潢整修，2018年7月重新開幕，正式更名為：【台味食堂】</p>
 
-            <button type="button" class="btn btn-danger btn-lg">台味理念</button>
+            <div class="main-title">台味理念</div>
+
             <p>每日現點現做，新鮮食材，讓客人有賓至如歸的感受。</p>
             <p>堅持道地的台灣家鄉味，品嚐後讓人回味無窮，彷佛走進時光隧道。</p>
           </div>
@@ -322,8 +383,7 @@ Class name automatically added to element */
         <div class="col-6 col">
           <img id="imgbox3" src="./img/新鮮自種蔬菜.jpg" width="410" height="540" alt="">
           <img id="imgtab3" src="./img/有機蔬菜.png" alt="">
-          <p>台味食材嚴選，空心菜，農家自種，</p>
-          <p>無農藥，吃得更安心</p>
+          <p>台味食材嚴選，空心菜，農家自種，無農藥，吃得更安心</p>
 
         </div>
         <div class="col-6 col">
@@ -335,9 +395,7 @@ Class name automatically added to element */
             </blockquote>
           </div>
           <p>《蚵仔煎》
-            它的靈魂來自它的醬</p>
-            <p>獨門秘方調製 在用慢火熬煮</p>
-           <p> 吃過的朋友都會愛上</p><img id="imgtab4" src="./img/關於台味.png" alt="">
+            它的靈魂來自它的醬獨門秘方調製 在用慢火熬煮吃過的朋友都會愛上</p><img id="imgtab4" src="./img/關於台味.png" alt="">
 
         </div>
 
@@ -346,15 +404,25 @@ Class name automatically added to element */
 
   </section>
 
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <button id="aaaa1" type="button" class="btn btn-danger btn-lg">聯絡資訊</button>
+  <section id="t5">
+    <div class="container">
+      <div class="info">
+        <div class="main-title">聯絡資訊</div>
+        <p class="title">我們的位置</p>
+        <p class="content">427台中市潭子區雅潭路一段I5號</p>
+        <p class="title">客服資訊</p>
+        <p class="content">電話：04 2531 3007</p>
+        <p class="content">營業時間：上午10:00 - 下午2:30 、下午3:30 - 下午9:30</p>
+      </div>
+      <div class="row">
+        <div class="col">
 
+          <p></p>
+
+        </div>
       </div>
     </div>
-  </div>
-
+  </section>
 
 
 
