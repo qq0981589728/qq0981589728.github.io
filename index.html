@@ -157,8 +157,8 @@ Class name automatically added to element */
       padding: 200px 0 100px 50px;
     }
 
-    #imgtab2{
-      transform:translate(30%,-100%)
+    #imgtab2 {
+      transform: translate(30%, -100%)
     }
   </style>
 </head>
@@ -247,6 +247,36 @@ Class name automatically added to element */
       <img src="./img/截圖後小吃圖片.jpg" alt="">
       <img id="imgtab2" src="./img/產品介紹.png" alt="">
     </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-4">
+        <img src="./img/花枝炒麵3.png" width="290" height="200" alt="">
+        <h2 style="color:brown">炒麵類</h2>
+      <p>Q彈、鮮甜、美味，集三種特色於一身的花枝炒麵，金黃色的麵條是美味的關鍵角色，有多久沒品嘗...</p>
+      <img src="./img/蝦仁蛋炒飯3.png" width="290" height="200" alt="">
+        <h2 style="color:brown">炒飯類</h2>
+      <p>蝦仁蛋炒飯，是江蘇揚州漢族傳統小吃，屬於揚州炒飯之一。將雞蛋炒飯人人都會，但炒得好也不容易，有時飯成...</p>
+    </div>
+
+      <div class="col-4">
+        <img src="./img/海鮮燴飯3.png" width="290" height="200" alt="">
+        <h2 style="color:brown">燴飯類</h2>
+      <p>燴飯不是簡單的湯泡飯，雖然也有些菜餚被稱作燴飯，但實際上更類似於我們通常說的蓋澆飯。比如...</p>
+      <img src="./img/鮮魚湯3.png" width="290" height="200" alt="">
+        <h2 style="color:brown">湯類</h2>
+      <p>欣聞寶哥要來東營,朋友們熱情好客驅車20公里來到墾利新發飯店,邀寶哥一起品嘗東營特色美食之...</p>
+      </div>
+      <div class="col-4">
+        <img src="./img/粥品3.png" width="290" height="200" alt="">
+        <h2 style="color:brown">粥品</h2>
+      <p>鈣對寶寶發育來說是不可或缺的營養素，鈣多多的翡翠吻仔魚粥就很適合當作寶寶的副食品，不僅快...</p>
+      <img src="./img/新鮮涼拌小黃瓜拷貝.png" width="290" height="200" alt="">
+        <h2 style="color:brown">小菜類</h2>
+      <p>小黃瓜加入少許鹽(份量外)，搓揉洗淨後除去頭尾，切成四等分再切段。將作法1的小黃瓜段加入鹽...</p>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -254,47 +284,47 @@ Class name automatically added to element */
 
 
 
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"></script>
-    <script type="text/javascript" src="jquery.simplyscroll.min.js"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="jquery.simplyscroll.min.js"></script>
 
 
-    <script type="text/javascript">
-      (function ($) {
-        $(function () { //on DOM ready 
-          $("#scroller").simplyScroll();
-        });
-      })(jQuery);
-    </script>
-
-    <!-- Swiper JS -->
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script>
-      var swiper = new Swiper('.swiper-container', {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          clickable: true,
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
+  <script type="text/javascript">
+    (function ($) {
+      $(function () { //on DOM ready 
+        $("#scroller").simplyScroll();
       });
-    </script>
+    })(jQuery);
+  </script>
+
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
 </body>
 
 </html>
