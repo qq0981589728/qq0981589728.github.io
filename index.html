@@ -260,7 +260,7 @@ Class name automatically added to element */
       color: white;
     }
 
-    .input_content {  
+    .input_content {
       font-size: 24px;
       background-color: white;
       color: #CBCBCB;
@@ -272,12 +272,14 @@ Class name automatically added to element */
       padding: 0 15px;
     }
 
-    .input:focus,textarea:focus {
+    .input:focus,
+    textarea:focus {
       outline: none;
     }
 
-    .input::placeholder,.input_content textarea::placeholder  {
-        color: #CBCBCB;
+    .input::placeholder,
+    .input_content textarea::placeholder {
+      color: #CBCBCB;
     }
 
     .textarea_title {
@@ -289,12 +291,12 @@ Class name automatically added to element */
     }
 
     .input_content textarea {
-      border:none;
-      padding:0 15px;
+      border: none;
+      padding: 0 15px;
     }
 
 
-    #put {
+    .put {
       width: 169px;
       height: 46px;
       font-size: 24px;
@@ -303,12 +305,15 @@ Class name automatically added to element */
       font-weight: 900;
       text-align: center;
       margin: 20px auto 0 auto;
+      display: flex;
+      justify-content: center;
 
     }
-    .myBorder1{
+
+    .myBorder1 {
       border: solid 1px #FF0000;
       border-bottom: none;
-    } 
+    }
 
     .myBorder2 {
       border: solid 1px #FF0000;
@@ -346,10 +351,9 @@ Class name automatically added to element */
       line-height: 74px;
       margin: auto;
     }
- 
-      /* outline: none;
+
+    /* outline: none;
       border:none; */
- 
   </style>
 </head>
 
@@ -556,7 +560,33 @@ Class name automatically added to element */
           <div class="input_title col-2">授權同意</div>
           <div class="input_content col-10 "><input class="input" type="text" placeholder="本人同意台味食堂得上述資料作為聯繫或回覆用"></div>
         </div>
-        <div id="put" class="col">送出</div>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn put d-flex" data-toggle="modal" data-target="#exampleModal">
+          送出
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">顧客意見表已送出</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                感謝您的回饋!!
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-primary">儲存</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
   </section>
 
