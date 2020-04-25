@@ -11,7 +11,7 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="jquery.simplyscroll.css" media="all" type="text/css">
-<link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js">
+  <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js">
 
   <style>
     * {
@@ -25,6 +25,13 @@
       font-weight: bold;
 
 
+    }
+
+    .navbar-fixed-top{
+      position: fixed;
+      right: 0;
+      left: 0;
+      z-index: 1030;
     }
 
     html,
@@ -191,43 +198,49 @@ Class name automatically added to element */
       transform: translate(5%, -400%);
     }
 
-    .png1{
+    .png1 {
       background-image: url("./img/花枝炒麵3.png");
       background-size: cover;
       width: 290px;
       height: 200px;
       /* <img src="./img/花枝炒麵3.png" width="290" height="200" alt=""> */
     }
-    .png2{
+
+    .png2 {
       background-image: url("./img/蝦仁蛋炒飯3.png");
       background-size: cover;
       width: 290px;
       height: 200px;
     }
-    .png3{
+
+    .png3 {
       background-image: url("./img/海鮮燴飯3.png");
       background-size: cover;
       width: 290px;
       height: 200px;
     }
-    .png4{
+
+    .png4 {
       background-image: url("./img/鮮魚湯3.png");
       background-size: cover;
       width: 290px;
       height: 200px;
     }
-    .png5{
+
+    .png5 {
       background-image: url("./img/粥品3.png");
       background-size: cover;
       width: 290px;
       height: 200px;
     }
-    .png6{
+
+    .png6 {
       background-image: url("./img/新鮮涼拌小黃瓜拷貝.png");
       background-size: cover;
       width: 290px;
       height: 200px;
     }
+
     /* .-------------------t4------------ */
     section#t4 .container .imgbox3 {
       width: 100%;
@@ -390,7 +403,7 @@ Class name automatically added to element */
       border-bottom: solid 1px #FF0000;
     } */
 
-    
+
 
 
     .gototop {
@@ -424,7 +437,7 @@ Class name automatically added to element */
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
     <div class="container">
       <a class="navbar-brand font-weight-bold" href="#"><img height="50" src="./img/台味食堂logo.jpg" alt="">台味食堂</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
