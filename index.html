@@ -11,7 +11,7 @@
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link rel="stylesheet" href="jquery.simplyscroll.css" media="all" type="text/css">
-  <link rel="stylesheet" href="  https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js">
+
 
   <style>
     * {
@@ -407,16 +407,18 @@ Class name automatically added to element */
 
 
     .gototop {
-      font-size: 24px;
+      display: none;
+      font-size: 18px;
       position: fixed;
       bottom: 20px;
       right: 20px;
-      width: 80px;
-      height: 80px;
+      width: 50px;
+      height: 50px;
       text-align: center;
-      line-height: 80px;
+      line-height: 50px;
       background-color: #EDB2B2;
-      border-radius: 50%
+      border-radius: 50%;
+
     }
 
     .footer {
@@ -498,7 +500,7 @@ Class name automatically added to element */
         <div class="row">
           <div class="col-sm-12 col-lg-6 ">
             <img class="imgbox" src="./img/餐點種類拷貝.jpg">
-            
+
           </div>
 
           <div class="col-sm-12 col-lg-6 ">
@@ -548,7 +550,7 @@ Class name automatically added to element */
                   </button>
                 </div>
                 <div class="modal-body">
-                  <img src="./img/花枝炒麵3.png"width="290"height="200" alt="">
+                  <img src="./img/花枝炒麵3.png" width="290" height="200" alt="">
                   <p>肉絲炒麵</p>
                   <p>豬肝炒麵</p>
                   <p>牛肉炒麵</p>
@@ -560,7 +562,7 @@ Class name automatically added to element */
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                 
+
                 </div>
               </div>
             </div>
@@ -585,7 +587,7 @@ Class name automatically added to element */
                   </button>
                 </div>
                 <div class="modal-body2">
-                  <img src="./img/蝦仁蛋炒飯3.png"width="290" height="200" alt="">
+                  <img src="./img/蝦仁蛋炒飯3.png" width="290" height="200" alt="">
                   <p>蛋炒飯</p>
                   <p>玉米蛋炒飯</p>
                   <p>肉絲蛋炒飯</p>
@@ -598,7 +600,7 @@ Class name automatically added to element */
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  
+
                 </div>
               </div>
             </div>
@@ -626,7 +628,7 @@ Class name automatically added to element */
                   </button>
                 </div>
                 <div class="modal-body3">
-                  <img src="./img/海鮮燴飯3.png"width="290" height="200" alt="">
+                  <img src="./img/海鮮燴飯3.png" width="290" height="200" alt="">
                   <p>肉絲燴飯</p>
                   <p>牛肉燴飯</p>
                   <p>蝦仁燴飯</p>
@@ -636,7 +638,7 @@ Class name automatically added to element */
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  
+
                 </div>
               </div>
             </div>
@@ -678,7 +680,7 @@ Class name automatically added to element */
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  
+
                 </div>
               </div>
             </div>
@@ -714,7 +716,7 @@ Class name automatically added to element */
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  
+
                 </div>
               </div>
             </div>
@@ -740,7 +742,7 @@ Class name automatically added to element */
                 </div>
                 <div class="modal-body">
                   <img src="./img/新鮮涼拌小黃瓜拷貝.png" width="290" height="200" alt="">
-                  
+
                   <p>涼拌小黃瓜</p>
                   <p>皮蛋豆腐</p>
                   <p>韓式泡菜</p>
@@ -748,7 +750,7 @@ Class name automatically added to element */
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  
+
                 </div>
               </div>
             </div>
@@ -779,7 +781,7 @@ Class name automatically added to element */
           </div>
           <p>《蚵仔煎》
             它的靈魂來自它的醬獨門秘方調製 在用慢火熬煮吃過的朋友都會愛上</p>
-            <!-- <img class="imgtab4" src="./img/關於台味.png" alt=""> -->
+          <!-- <img class="imgtab4" src="./img/關於台味.png" alt=""> -->
 
         </div>
 
@@ -932,6 +934,20 @@ Class name automatically added to element */
         prevEl: '.swiper-button-prev',
       },
     });
+
+    var gotopbtn = document.querySelector('.gototop');
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+        gotopbtn.style.display = "block";
+      } else {
+        gotopbtn.style.display = "none";
+      }
+    }
+
   </script>
 </body>
 
