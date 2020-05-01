@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="jquery.simplyscroll.css" media="all" type="text/css">
+    <style>
+
+        *{
+            font-family: "微軟正黑體";
+            font-weight: bold;
+           
+        }
+        html,
+        body {
+            position: relative;
+            height: 100%;
+
+        }
+
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 60%;
+
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+
+            /* Center slide text vertically */
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-box-pack: center;
+            -ms-flex-pack: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            -webkit-align-items: center;
+            align-items: center;
+        }
+
+        /* Container DIV - automatically generated */
+        .simply-scroll-container {
+            position: relative;
+        }
+
+        /* Clip DIV - automatically generated */
+        .simply-scroll-clip {
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* UL/OL/DIV - the element that simplyScroll is inited on
+Class name automatically added to element */
+        .simply-scroll-list {
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .simply-scroll-list li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+        .simply-scroll-list li img {
+            border: none;
+            display: block;
+        }
+
+        /* Custom class modifications - adds to / overrides above
+
+.simply-scroll is default base class */
+
+        /* Container DIV */
+        .simply-scroll {
+            width: 100%;
+            height: 250px;
+            margin-bottom: 1em;
+        }
+
+        /* Clip DIV */
+        .simply-scroll .simply-scroll-clip {
+            width: 100%;
+            height: 250px;
+        }
+
+        /* Explicitly set height/width of each list item */
+        .simply-scroll .simply-scroll-list li {
+            float: left;
+            /* Horizontal scroll only */
+            width: 290px;
+            height: 250px;
+        }
+
+        .img1 {
+            width: 100%;
+
+        }
+
+
+        section#a1 .main-title {
+            width: 215px;
+            height: 75px;
+            background-color: #FF0000;
+            border-radius: 50px;
+            font-size: 36px;
+            color: white;
+            font-weight: 900;
+            text-align: center;
+            line-height: 75px;
+            margin: 20px 32px;
+        }
+
+        .aia{
+            width: 100%;
+            background-color: #FFE9E9;
+            padding: 50px 0;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./img/台味食堂logo.jpg" width="50" alt="">台味食堂</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto">
+                    <a class="nav-item nav-link active" href="#a1">關於台味 <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">產品介紹</a>
+                    <a class="nav-item nav-link" href="#">產品特色</a>
+                    <a class="nav-item nav-link" href="#">聯絡我們</a>
+                    <a class="nav-item nav-link"
+                        href="https://zh-tw.facebook.com/pages/category/Diner/%E5%8F%B0%E5%91%B3%E9%A3%9F%E5%A0%82-1559497914265834/">FB粉絲團</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/小吃圖片.jpeg" alt="" style="width:100%"></div>
+            <div class="swiper-slide"><img src="./img/米糕圖片.jpeg" alt="" style="width:100%"></div>
+            <div class="swiper-slide"><img src="./img/餐點.jpg" alt="" style="width:100%"></div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+
+    </div>
+
+    <ul id="scroller">
+        <li><img src="./img/花枝炒麵3.png" width="290" height="200">
+            <p class="text-center font-weight-normal">花枝炒麵</p>
+        </li>
+        <li><img src="./img/海鮮燴飯3.png" width="290" height="200">
+            <p class="text-center font-weight-normal">海鮮燴飯</p>
+        </li>
+        <li><img src="./img/粥品3.png" width="290" height="200">
+            <p class="text-center font-weight-normal">吻仔魚粥
+        </li>
+        <li><img src="./img/蝦仁蛋炒飯3.png" width="290" height="200">
+            <p class="text-center font-weight-normal">蝦仁炒飯
+        </li>
+        <li><img src="./img/鮮魚湯3.png" width="290" height="200">
+            <p class="text-center font-weight-normal">鮮魚湯
+        </li>
+
+    </ul>
+
+
+    <section id="a1">
+        <div class="aia">
+        <div class="container aia">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6">
+                    <img class="img1" src="./img/餐點種類拷貝.jpg" alt="">
+                </div>
+
+                <div class="col-sm-12 col-lg-6">
+                    <div class="main-title">台味創始</div>
+
+                    <p>約20年前創立，原名：【台味飲食部】，</p>
+                    <p>2018年6月裝潢整修，2018年7月重新開幕，正式更名為：【台味食堂】</p>
+
+                    <div class="main-title">台味理念</div>
+
+                    <p>每日現點現做，新鮮食材，讓客人有賓至如歸的感受。</p>
+                    <p>堅持道地的台灣家鄉味，品嚐後讓人回味無窮，彷佛走進時光隧道。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="a2">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                </div>
+            </div>
+                
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script type="text/javascript" src="jquery.simplyscroll.min.js"></script>
+
+
+
+
+    <script type="text/javascript">
+        (function ($) {
+            $(function () { //on DOM ready 
+                $("#scroller").simplyScroll();
+            });
+        })(jQuery);
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+        });
+    </script>
+
+</body>
+
+</html>
