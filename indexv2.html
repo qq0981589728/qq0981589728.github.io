@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="jquery.simplyscroll.css" media="all" type="text/css">
     <style>
-
-        *{
+        * {
             font-family: "微軟正黑體";
             font-weight: bold;
-           
+
         }
+
         html,
         body {
             position: relative;
@@ -134,10 +134,26 @@ Class name automatically added to element */
             margin: 20px 32px;
         }
 
-        .aia{
+        .aia {
             width: 100%;
             background-color: #FFE9E9;
             padding: 50px 0;
+        }
+
+        .png1 {
+            width: 290px;
+            height: 200px;
+            background-image: url("./img/花枝炒麵3.png");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .png2 {
+            width: 290px;
+            height: 200px;
+            background-image: url("./img/蝦仁蛋炒飯3.png");
+            background-position: center;
+            background-size: cover;
         }
     </style>
 
@@ -155,7 +171,7 @@ Class name automatically added to element */
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav mx-auto">
                     <a class="nav-item nav-link active" href="#a1">關於台味 <span class="sr-only">(current)</span></a>
-                    <a class="nav-item nav-link" href="#">產品介紹</a>
+                    <a class="nav-item nav-link" href="#a2">產品介紹</a>
                     <a class="nav-item nav-link" href="#">產品特色</a>
                     <a class="nav-item nav-link" href="#">聯絡我們</a>
                     <a class="nav-item nav-link"
@@ -201,40 +217,132 @@ Class name automatically added to element */
 
     <section id="a1">
         <div class="aia">
-        <div class="container aia">
-            <div class="row">
-                <div class="col-sm-12 col-lg-6">
-                    <img class="img1" src="./img/餐點種類拷貝.jpg" alt="">
-                </div>
+            <div class="container aia">
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6">
+                        <img class="img1" src="./img/餐點種類拷貝.jpg" alt="">
+                    </div>
 
-                <div class="col-sm-12 col-lg-6">
-                    <div class="main-title">台味創始</div>
+                    <div class="col-sm-12 col-lg-6">
+                        <div class="main-title">台味創始</div>
 
-                    <p>約20年前創立，原名：【台味飲食部】，</p>
-                    <p>2018年6月裝潢整修，2018年7月重新開幕，正式更名為：【台味食堂】</p>
+                        <p>約20年前創立，原名：【台味飲食部】，</p>
+                        <p>2018年6月裝潢整修，2018年7月重新開幕，正式更名為：【台味食堂】</p>
 
-                    <div class="main-title">台味理念</div>
+                        <div class="main-title">台味理念</div>
 
-                    <p>每日現點現做，新鮮食材，讓客人有賓至如歸的感受。</p>
-                    <p>堅持道地的台灣家鄉味，品嚐後讓人回味無窮，彷佛走進時光隧道。</p>
+                        <p>每日現點現做，新鮮食材，讓客人有賓至如歸的感受。</p>
+                        <p>堅持道地的台灣家鄉味，品嚐後讓人回味無窮，彷佛走進時光隧道。</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </section>
 
     <section id="a2">
         <div class="container">
             <div class="row">
-                <div class="col">
-
+                <div class="col-sm-12 col-lg">
+                    <img src="./img/截圖後小吃圖片拷貝.jpg" alt="" style="width: 100%;">
                 </div>
             </div>
-                
+
         </div>
 
     </section>
 
+    <section id="a3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-lg-4">
+                    <!-- Button trigger modal -->
+                    <div type="button" class="png1" data-toggle="modal" data-target="#exampleModalCenter">
+
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">炒麵類</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <img src="./img/花枝炒麵3.png" width="290" height="200" alt="">
+                                    <p>肉絲炒麵</p>
+                                    <p>豬肝炒麵</p>
+                                    <p>牛肉炒麵</p>
+                                    <p>蝦仁炒麵</p>
+                                    <p>羊肉炒麵</p>
+                                    <p>花枝炒麵</p>
+                                    <p>蚵仔炒麵</p>
+                                    <p>什錦炒麵</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>炒麵類</h2>
+                    <p>Q彈、鮮甜、美味，集三種特色於一身的花枝炒麵，金黃色的麵條是美味的關鍵角色，有多久沒品嘗...</p>
+
+                    <!-- Button trigger modal -->
+                    <div type="button" class="png2" data-toggle="modal" data-target="#exampleModalCenter2">
+
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle2">炒飯類</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body2">
+                                    <img src="./img/蝦仁蛋炒飯3.png" width="290" height="200" alt="">
+                                    <p>蛋炒飯</p>
+                                    <p>玉米蛋炒飯</p>
+                                    <p>肉絲蛋炒飯</p>
+                                    <p>牛肉蛋炒飯</p>
+                                    <p>蝦仁蛋炒飯</p>
+                                    <p>羊肉蛋炒飯</p>
+                                    <p>火腿蛋炒飯</p>
+                                    <p>鹹豬肉蛋炒飯</p>
+                                    <p>什錦蛋炒飯</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h2>炒飯類</h2>
+                    <p>蝦仁蛋炒飯，是江蘇揚州漢族傳統小吃，屬於揚州炒飯之一。將雞蛋炒飯人人都會，但炒得好也不容...</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </section>
 
 
 
